@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+
+    /*Font*/
+    --font-luxury: "Luxury", serif;
+
+    /*Buton Renkleri*/    
+    --color-button-border: rgb(156,140,185);
+    --color-button-hover: rgb(255, 255, 255);
+    --color-line-violet: rgb(75,31,111);
+    --color-line-pearl: rgb(241,237,247);
+
+    /*Buton Animasyonları*/
+    --animate-star-bottom: star-movement-bottom 3s linear infinite alternate;
+    --animate-star-top: star-movement-top 3s linear infinite alternate;
+
+    @keyframes star-movement-bottom {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+    }
+    @keyframes star-movement-top {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+}
+
+@font-face {
+    font-family: "BLuxury";
+    src: url("./assets/fonts/HelveticaNeueHeavy.otf") format("opentype");
+    font-style: normal;
+}
+
+
+
