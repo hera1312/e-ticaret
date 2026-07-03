@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-// Hatalı StarBorder kaldırıldı, yerine jilet gibi Button bileşenimiz bağlandı:
 import Button from '../components/Button.jsx';
 import lafemmeImage from '../assets/lafemme.png';
 import lhommeImage from '../assets/lhomme.png';
