@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import lamourImage from '../assets/lamour.png';
 
 function BookingPage() {
   const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ function BookingPage() {
         <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0"
         style={{
-          backgroundImage: "url('/src/assets/lamour.png')",
+          backgroundImage: `url(${lamourImage})`,
           opacity: 0.15
         }}
         
