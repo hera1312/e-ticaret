@@ -29,7 +29,7 @@ function Hero() {
             <img
               src={slide.image}
               alt="C. De Coursey Campaign"
-              className="h-full w-full object-cover object-center"
+              className="h-full w-full object-cover md:object-center object-[50%_center]"
             />
 
             <div className="absolute bottom-20 left-12 z-20 max-w-md text-stone-200">
