@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import CDCImage from '../assets/cdc.png'; 
 
 function HeritagePage() {
   const timelineData = [
@@ -98,7 +99,8 @@ function HeritagePage() {
         >
 
           <div className="relative aspect-3/4 w-full bg-stone-900 border border-stone-800/40 overflow-hidden flex items-center justify-center group shadow-2xl">
-              <img src="/src/assets/cdc.png"
+              <img 
+                src={CDCImage}
                 alt="Charles de Coursey"
                 className="w-full h-full object-cover opacity-80 group-hover:scale-102 transition-transform duration-700"
               />
