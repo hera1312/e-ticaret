@@ -1,10 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button.jsx';
 import lafemmeImage from '../assets/lafemme.png';
 import lhommeImage from '../assets/lhomme.png';
 
 function LaSoireePage() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen w-full bg-neutral-950 text-stone-100 pt-32 pb-20 px-8 md:px-16 flex flex-col justify-center relative overflow-hidden selection:bg-amber-600/30">
       
@@ -52,7 +55,7 @@ function LaSoireePage() {
               
               <Button 
                 text="Randevu Oluştur" 
-                onClick={() => window.location.href = "/booking"} 
+                onClick={() => navigate("/booking")} 
               />
               <p className="font-(--font-luxury-sans) text-[10px] text-stone-500 tracking-widest max-w-45 mx-auto leading-relaxed hidden lg:block">
                 İki kutup, tek bir kusursuz ölçü. Çiftlerimiz için özel. Prova salonu için yerinizi ayırtın.
